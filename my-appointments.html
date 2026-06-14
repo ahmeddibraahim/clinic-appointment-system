@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجوزاتي - عيادة د. الألفي</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-logo">🏥 عيادة د. الألفي</div>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="appointment.html">حجز موعد</a></li>
+        <li><a href="my-appointments.html">حجوزاتي</a></li>
+      </ul>
+    </nav>
+
+    <!-- SEARCH BOX -->
+    <section class="appointment-section">
+      <div class="section-title">
+        <h2>حجوزاتي</h2>
+        <p>اضغط علي الزر و ادخل رقم موبايلك لعرض مواعيدك</p>
+      </div>
+      <div class="form-container">
+        <div class="form-group"></div>
+        <button type="button" class="btn-submit" onclick="showMyHistory()">
+          🔍 عرض حجوزاتي
+        </button>
+      </div>
+    </section>
+
+    <!-- APPOINTMENTS TABLE -->
+    <section id="appointments-list" class="table-section" style="display: none">
+      <div class="section-title">
+        <h2>حجوزاتك المسجلة</h2>
+        <p>هذه هي المواعيد المرتبطة برقمك</p>
+      </div>
+      <div class="table-wrapper">
+        <table id="appointments-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>الاسم</th>
+              <th>الهاتف</th>
+              <th>القسم</th>
+              <th>التاريخ</th>
+              <th>الوقت</th>
+              <th>الاجراء 1</th>
+              <th>الاجراء 2</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+        <p id="no-appointments" class="no-data" style="display: none">
+          لا توجد مواعيد لهذا الرقم
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 عيادة د. الألفي — جميع الحقوق محفوظة</p>
+      <p>📍 القاهرة، مصر &nbsp;|&nbsp; 📞 01000000000</p>
+    </footer>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عيادة د. الألفي</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-logo">🏥 عيادة د. الألفي</div>
+     
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="appointment.html">حجز موعد</a></li>
+        <li><a href="my-appointments.html">حجوزاتي</a></li>
+        <li><a href="faq.html">الاسئله الشائعه </a></li>
+      </ul>
+    </nav>
+    </nav>
+
+    <!-- SECTION 1: HOME -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>عيادة د.الألفي</h1>
+        <p>نقدم لك أفضل رعاية طبية بأحدث الأجهزة وأمهر الأطباء</p>
+        <a href="appointment.html" class="btn-primary">احجز موعدك الآن</a>
+      </div>
+      <div class="hero-shape"></div>
+    </section>
+
+    <!-- SECTION 2: ABOUT THE DOCTOR -->
+    <section id="about" class="about-section">
+      <div class="section-title">
+        <h2>عن الطبيب</h2>
+        <p>تعرف على طبيبك</p>
+      </div>
+      <div class="about-card">
+        <div class="doctor-image">
+          <img src="../static/Doc image.jpg" alt="صورة الطبيب" class="img-fluid-3d" />
+        </div>
+        <div class="doctor-info">
+          <h3>د. الألفي</h3>
+          <span class="badge">أخصائي باطنة وقلب</span>
+          <p>
+            دكتور محمد الألفي حاصل على درجة الدكتوراه من جامعة القاهرة، خبرة
+            أكثر من 15 سنة في مجال الباطنة وأمراض القلب. يؤمن بأن الطب ليس فقط
+            علم بل فن التعامل مع المريض بإنسانية.
+          </p>
+          <ul class="doctor-stats">
+            <li><strong>+2000</strong> مريض</li>
+            <li><strong>15</strong> سنة خبرة</li>
+            <li><strong>98%</strong> رضا المرضى</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES -->
+    <section id="services" class="services-section">
+      <div class="section-title">
+        <h2>خدماتنا</h2>
+        <p>نقدم مجموعة متكاملة من الخدمات الطبية</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" onclick="openModal('general')">
+          <div class="service-icon">🩺</div>
+          <h3>الكشف العام</h3>
+          <p>فحص شامل للحالة الصحية العامة مع تقرير طبي مفصل</p>
+        </div>
+        <div class="service-card" onclick="openModal('heart')">
+          <div class="service-icon">❤️</div>
+          <h3>أمراض القلب</h3>
+          <p>تشخيص وعلاج جميع أمراض القلب والأوعية الدموية</p>
+        </div>
+        <div class="service-card" onclick="openModal('lab')">
+          <div class="service-icon">🔬</div>
+          <h3>تحاليل مخبرية</h3>
+          <p>تحاليل دم وبول وفيروسات بأحدث الأجهزة الطبية</p>
+        </div>
+        <div class="service-card" onclick="openModal('chronic')">
+          <div class="service-icon">📋</div>
+          <h3>متابعة الأمراض المزمنة</h3>
+          <p>برنامج متابعة دورية لمرضى السكر والضغط والكوليسترول</p>
+        </div>
+      </div>
+      <div class="services-footer">
+        <br />
+
+        <span>✨ الكشف بأسبقية الحضور</span>
+        <span>🕒 متاح خدمات الطوارئ 24/7</span>
+        <span>💳 متاح الدفع بالفيزا</span>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="service-modal" class="modal-overlay" onclick="closeModal(event)">
+      <div class="modal-box">
+        <button class="modal-close" onclick="closeModalBtn()">✕</button>
+        <div id="modal-icon" class="modal-icon"></div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <ul id="modal-list"></ul>
+        <a href="appointment.html"  class="btn-primary"  onclick="closeModalBtn()"  style="display: inline-block; margin-top: 20px"
+          >احجز موعدك الآن</a>
+      </div>
+    </div>
+
+     
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 عيادة د. الألفي — جميع الحقوق محفوظة</p>
+      <p>📍 القاهرة، مصر &nbsp;|&nbsp; 📞 01000000000</p>
+    </footer>
+
+ <script src="../static/script.js"></script>
+  </body>
+</html>
